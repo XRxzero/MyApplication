@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desk"
+    android:id="@+id/absolute_id">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="54dp">
+            <TextView
+                android:id="@+id/leftnum"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_x="82dp"
+                android:layout_y="54dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/peru"
+                android:textSize="50dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="67dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="46dp"
+                android:orientation="vertical"
+                android:layout_x="165dp"
+                android:layout_y="100dp">
+
+                <ImageView
+                    android:id="@+id/r1show1"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_x="0dp"
+                    app:srcCompat="@drawable/c12" />
+
+                <ImageView
+                    android:id="@+id/r1show11"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_y="15dp"
+                    app:srcCompat="@drawable/c12" />
+
+                <ImageView
+                    android:id="@+id/r1show12"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_y="30dp"
+                    app:srcCompat="@drawable/c12" />
+
+                <ImageView
+                    android:id="@+id/r1show13"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_y="45dp"
+                    app:srcCompat="@drawable/c12" />
+
+                <ImageView
+                    android:id="@+id/r1show14"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="-45dp"
+                    android:layout_y="60dp"
+                    app:srcCompat="@drawable/c12" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/pass3"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-100dp"
+                android:layout_marginTop="40dp"
+                android:layout_x="50dp"
+                android:layout_y="130dp"
+                android:gravity="center"
+                android:text="PASS"
+                android:textColor="@color/peru"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/midnum"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_x="258dp"
+            android:layout_y="15dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/peru"
+            android:textSize="50dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="67dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-48dp"
+            android:layout_marginTop="95dp"
+            android:layout_x="270dp"
+            android:layout_y="110dp">
+
+            <ImageView
+                android:id="@+id/r2show1"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_x="0dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/r2show11"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_x="25dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/r2show12"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_x="50dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/r2show13"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_x="75dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/r2show14"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_x="100dp"
+                app:srcCompat="@drawable/c12" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/pass2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-140dp"
+            android:layout_marginTop="85dp"
+            android:layout_x="323dp"
+            android:layout_y="100dp"
+            android:gravity="center"
+            android:text="PASS"
+            android:textColor="@color/peru"
+            android:textSize="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_x="270dp"
+            android:layout_y="190dp">
+
+            <ImageView
+                android:id="@+id/pshow1"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_x="0dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/pshow11"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_x="25dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/pshow12"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_x="50dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/pshow13"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_x="75dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/pshow14"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_x="100dp"
+                app:srcCompat="@drawable/c12" />
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="158dp"
+            android:layout_height="157dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginLeft="0dp"
+            >
+        <TextView
+            android:id="@+id/rightnum"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="98dp"
+            android:layout_x="578dp"
+            android:layout_y="63dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/peru"
+            android:textSize="50dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="67dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="-148dp"
+            android:layout_marginTop="37dp"
+            android:layout_x="490dp"
+            android:layout_y="100dp">
+
+            <ImageView
+                android:id="@+id/r3show1"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_x="0dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/r3show11"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-45dp"
+                android:layout_y="15dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/r3show12"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-45dp"
+                android:layout_y="30dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/r3show13"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-45dp"
+                android:layout_y="45dp"
+                app:srcCompat="@drawable/c12" />
+
+            <ImageView
+                android:id="@+id/r3show14"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-45dp"
+                android:layout_y="60dp"
+                app:srcCompat="@drawable/c12" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/pass1"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="30dp"
+            android:layout_x="480dp"
+            android:layout_y="130dp"
+            android:gravity="center"
+            android:text="PASS"
+            android:textColor="@color/peru"
+            android:textSize="30dp" />
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <AbsoluteLayout
+        android:id="@+id/over"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="328dp"
+            android:layout_y="0dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="204dp"
+                android:layout_height="107dp"
+                app:srcCompat="@drawable/gameover"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="259dp"
+                    android:layout_y="253dp"
+                    android:background="@color/orange"
+                    android:text="重新开始"
+                    tools:layout_editor_absoluteX="76dp"
+                    tools:layout_editor_absoluteY="194dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="33dp"
+                    android:layout_x="367dp"
+                    android:layout_y="253dp"
+                    android:background="@color/orange"
+                    android:text="返回主界面"
+                    tools:layout_editor_absoluteX="242dp"
+                    tools:layout_editor_absoluteY="176dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </AbsoluteLayout>
+
+
+</AbsoluteLayout>

@@ -1,0 +1,121 @@
+package com.example.test;
+
+import android.animation.ObjectAnimator;
+import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.Bundle;
+import android.text.style.AbsoluteSizeSpan;
+import android.util.DisplayMetrics;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.AbsoluteLayout;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+/*import com.example.test.View.GameView;*/
+import com.example.test.utils.ResizeImage;
+
+public class GameActivity extends AppCompatActivity {
+    public ImageButton Back;
+    public int a;
+    public ImageButton[] card=new ImageButton[13];
+    public ImageView Card1,Card2;
+    public static int screenW,screenH;
+    /*public GameView gameView=null;*/
+    public Bitmap[] test=new Bitmap[13];
+    public Bitmap[] newTest=new Bitmap[13];
+    public BitmapDrawable[] testDrawable=new BitmapDrawable[13];
+    public  int y=0;
+    public int ShareCard=0;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        //得到屏幕大小  px为单位
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        screenW = dm.widthPixels;
+        screenH = dm.heightPixels;
+
+        final AbsoluteLayout startView =new AbsoluteLayout(this);//布局模式
+        setContentView(startView);//启动绝对布局模式
+
+
+        Resources resources=getResources();//资源
+        startView.setBackgroundResource(R.drawable.desk);//设置背景
+        //防止图片拉伸
+        BitmapFactory.Options bf=new BitmapFactory.Options();
+        bf.inScaled=false;
+
+        Back=new ImageButton(this);
+        Bitmap BackImage =BitmapFactory.decodeResource(resources,R.drawable.return1,bf);
+        int backW=BackImage.getWidth();
+        int backH=BackImage.getHeight();
+        BackImage=BitmapFactory.decodeResource(resources,R.drawable.return1);
+        Bitmap newBackImage=Bitmap.createScaledBitmap(BackImage,backW*screenW/800,backH*screenH/480,true);//得到新的图片大小
+
+
+        //这俩行是把图片的信息显示出来
+        BitmapDrawable BackImageDrawable =new BitmapDrawable(resources,newBackImage);
+        Back.setImageDrawable(BackImageDrawable);
+
+        //设置布局，绝对布局模式（可以精确到任何位置）（括号里为按钮的大小以及位置
+        Back.setLayoutParams(new AbsoluteLayout.LayoutParams(backW*screenW/800,
+        backH*screenH/480,630*screenW/800,0*screenH/480));
+        startView.addView(Back);  //启动按钮
+
+        //测试加一张牌进去
+        for(int i=0;i<13;i++){
+        card[i]=new ImageButton(this);
+        test[i]=BitmapFactory.decodeResource(resources,R.drawable.test,bf);
+        int W=test[i].getWidth();
+        int H=test[i].getHeight();
+        test[i]=BitmapFactory.decodeResource(resources,R.drawable.test);
+        newTest[i]=Bitmap.createScaledBitmap(test[i],3*W*screenW/1920,2*H*screenH/1080,true);
+        testDrawable[i]=new BitmapDrawable(resources,newTest[i]);
+        card[i].setImageDrawable(testDrawable[i]);
+        card[i].setLayoutParams(new AbsoluteLayout.LayoutParams(3*W*screenW/1920,2*H*screenH/1080,(300+i*80)*screenW/1920,350*screenW/1080));
+        startView.addView(card[i]);
+        }
+        for(;ShareCard<13;ShareCard++) {
+            /*card[ShareCard].setOnClickListener(new View.OnClickListener() {
+                int x=0;
+                @Override
+                public void onClick(View view) {
+                    x++;
+                    if(x%2==0)
+                        card[ShareCard].setTranslationY(0);
+                    else card[ShareCard].setTranslationY(-35);
+                }
+            });*/
+        }
+
+
+       /*card.setOnClickListener(new View.OnClickListener() {
+            int x=0;
+            @Override
+            public void onClick(View view) {
+                x++;
+                if(x%2==0){
+                    card.setTranslationY(20);
+                }
+                else card.setTranslationY(-20);
+            }
+        });*/
+
+        //创建一个监听器，返回开始界面
+    
